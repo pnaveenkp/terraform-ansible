@@ -10,7 +10,7 @@
      - update
 
   - name: installing nginx sever
-    shell: apt ibnstall -y nginx
+    shell: apt install -y nginx
     tags: 
      - install nginx
 
@@ -23,12 +23,12 @@
 
 
 
-- name: play for create user for all servers
+- name: playbook for creating admin
   hosts: allservers
   become: yes
   become_user: root
   tasks: 
-  - name: create user
+  - name: create users
     user: 
       name : "Naveen"
       state: "present"
