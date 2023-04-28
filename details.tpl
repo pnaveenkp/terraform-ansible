@@ -12,7 +12,3 @@ testserver02 ansible_port=22 ansible_host=${testserver02}
 [dbserver]
 testserver03 ansible_port=22 ansible_host=${testserver03}
 
-[private]
-testserver01 ansible_port=22 ansible_host=${pvttestserver01}
-testserver02 ansible_port=22 ansible_host=${pvttestserver02}
-testserver03 ansible_port=22 ansible_host=${pvttestserver03}
