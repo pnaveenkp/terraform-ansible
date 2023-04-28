@@ -1,7 +1,7 @@
 # variable "aws_access_key" {}
 # variable "aws_secret_key" {}
 # variable "aws_region" {}
-# variable "amis" {
+# # variable "amis" {
 #     description = "AMIs by region"
 #     default = {
 #         us-east-1 = "ami-97785bed" # ubuntu 14.04 LTS
