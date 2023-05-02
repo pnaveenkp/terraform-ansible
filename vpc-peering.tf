@@ -5,7 +5,7 @@ data "aws_vpc" "ansible_vpc" {
 resource "aws_vpc_peering_connection" "foo" {
   peer_vpc_id   = data.aws_vpc.ansible_vpc.id
   vpc_id        = aws_vpc.default.id
-  auto-accept   = true
+  auto_accept   = true
 
   accepter {
     allow_remote_vpc_dns_resolution = true
