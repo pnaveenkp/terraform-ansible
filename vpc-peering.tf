@@ -14,5 +14,11 @@ resource "aws_vpc_peering_connection" "foo" {
   requester {
     allow_remote_vpc_dns_resolution = true
   }
+
+  tags {
+    Name ="Ansible-${var.vpc_name}-peering"
+    Owner= "Naveen"
+    environment= "${var.environment}"
+  }
 }
 
