@@ -21,6 +21,7 @@
          copy: >
             src=/tmp/dockertest1/index.html
             dest=/var/www/html/index.nginx-debian.html
+            remote_src=yes
             owner=root
             group=root
             mode=0644
@@ -32,6 +33,7 @@
          copy: >
             src=/tmp/dockertest1/style.css
             dest=/var/www/html/style.css
+            remote_src=yes
             owner=root
             group=root
             mode=0644
@@ -43,6 +45,7 @@
          copy: >
             src=/tmp/dockertest1/scorekeeper.js
             dest=/var/www/html/scorekeeper.js
+            remote_src=yes
             owner=root
             group=root
             mode=0644
