@@ -36,7 +36,7 @@
             mode=0644
        - name: Copy the javascript files to destination folder.
          copy: >
-            src=/home/ansibleadmin/terraform-ansiblescorekeeper.js
+            src=/home/ansibleadmin/terraform-ansible/scorekeeper.js
             dest=/var/www/html/scorekeeper.js
             owner=root
             group=root
