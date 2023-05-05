@@ -1,5 +1,5 @@
 resource "local_file" "docker-inventory-file" {
-  content = templatefile("docker_details.tpl",
+  content = templatefile("docker-details.tpl",
     {
 
       testserver01 = aws_instance.web-1.private_ip
