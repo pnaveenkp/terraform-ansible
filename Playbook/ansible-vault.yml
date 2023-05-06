@@ -42,7 +42,7 @@
         user:
           name: naveen
           state: present
-          comment: Admin User Anand
+          comment: Admin User naveen
           groups: root
           shell: /bin/bash
           group: root
@@ -52,10 +52,10 @@
         debug:
          var: user_password
       - name: Restart SSH Service
-        shell: service sshd restart
+        shell: sudo service sshd restart
     handlers:
       - name: Restart SSH Service
-        shell: service sshd restart
+        shell: sudo service sshd restart
 
 
     
