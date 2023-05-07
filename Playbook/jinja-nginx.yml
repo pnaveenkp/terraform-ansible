@@ -27,6 +27,8 @@
             owner=root
             group=root
             mode=0644
+          notify:
+          - restart nginx
        - name: Copy the style files to destination folder.
          copy: >
             src=/home/ansibleadmin/terraform-ansible/style.css
@@ -34,6 +36,8 @@
             owner=root
             group=root
             mode=0644
+          notify:
+          - restart nginx
        - name: Copy the javascript files to destination folder.
          copy: >
             src=/home/ansibleadmin/terraform-ansible/scorekeeper.js
@@ -41,5 +45,7 @@
             owner=root
             group=root
             mode=0644
+          notify:
+          - restart nginx
        - name: restart nginx
          command: service nginx restart
