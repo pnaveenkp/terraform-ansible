@@ -1,8 +1,8 @@
 ---
   - name: Installing nginx using ansible rle
     hosts: private
+    gather_facts: yes
     become: yes
     become_user: root
     roles: 
     - /etc/ansible/roles/nginxinstall
-    
