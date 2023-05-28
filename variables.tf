@@ -28,3 +28,4 @@ variable "azs" {
 variable "environment" { default = "dev" }
 variable "instance_type" {}
 variable "imagename" {}
+variable "key_name" {}
